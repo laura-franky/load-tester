@@ -1,0 +1,24 @@
+{
+  "name": "load-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "artillery": "artillery run test.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laura-franky/load-tester.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laura-franky/load-tester/issues"
+  },
+  "homepage": "https://github.com/laura-franky/load-tester#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "artillery": "^1.7.7"
+  }
+}
