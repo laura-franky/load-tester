@@ -17,7 +17,9 @@
     "url": "https://github.com/laura-franky/load-tester/issues"
   },
   "homepage": "https://github.com/laura-franky/load-tester#readme",
-  "dependencies": {},
+  "dependencies": {
+    "artillery-plugin-publish-metrics": "^1.4.0"
+  },
   "devDependencies": {
     "artillery": "^1.7.7"
   }
