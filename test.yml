@@ -2,12 +2,14 @@ config:
   plugins:
   publish-metrics:
     - type: datadog
+      apiKey: "{{ $env.APIKEY }}"
       prefix: "artillery.publish_metrics_plugin."
       tags:
         - "testId:mytest123"
         - "reporterType:datadog-agent"
       event:
-        priority: low
+        title: "Plugin integration test"
+        priority: high
         tags:
           - "testId:mytest123"
 
