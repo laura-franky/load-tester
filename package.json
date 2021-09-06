@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dino": "artillery dino",
-    "artillery": "artillery run test.yml -o some_report.json",
-    "datadog": "tsc datadog.ts"
+    "artillery": "artillery run %npm_config_testInput% -o %npm_config_testOutput%",
+    "report": "artillery report some_report.json"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,6 @@
   },
   "homepage": "https://github.com/laura-franky/load-tester#readme",
   "dependencies": {
-    "@datadog/datadog-api-client": "^1.0.0-beta.5",
-    "artillery-plugin-publish-metrics": "^1.4.0",
     "typescript": "^4.4.2"
   },
   "devDependencies": {

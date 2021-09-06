@@ -1,0 +1,16 @@
+config:
+  plugins:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      name: Warm up
+
+scenarios:
+  - name: "test"
+    flow:
+      - get:
+          url: "/recipes"
+      - think: 2
+      - get:
+          url: "/recipes/2"
